@@ -10,3 +10,4 @@ C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\o
 C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.exe
 C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.pdb
 C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmappointment.resources
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmpatientregister.resources

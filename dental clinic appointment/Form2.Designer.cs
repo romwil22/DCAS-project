@@ -35,6 +35,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnsubmit = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.checkBox3 = new System.Windows.Forms.CheckBox();
+            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,6 +60,11 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.checkBox4);
+            this.panel1.Controls.Add(this.checkBox3);
+            this.panel1.Controls.Add(this.checkBox2);
+            this.panel1.Controls.Add(this.checkBox1);
+            this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.comboBox1);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
@@ -92,12 +105,109 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "7:00 - 8:00 (AM)",
-            "8:00 - 9:00 (AM)"});
+            "8:00 - 9:00 (AM)",
+            "9:00 - 10:00 (AM)",
+            "10:00 - 11:00 (AM)",
+            "11:00am - 12:00NN ",
+            "1:00 - 2:00 (PM)",
+            "2:00 - 3:00 (PM)",
+            "3:00 - 4:00 (PM)",
+            "4:00 - 5:00 (PM)"});
             this.comboBox1.Location = new System.Drawing.Point(113, 46);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(261, 26);
             this.comboBox1.TabIndex = 4;
+            // 
+            // btnsubmit
+            // 
+            this.btnsubmit.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnsubmit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnsubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnsubmit.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnsubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnsubmit.Location = new System.Drawing.Point(21, 394);
+            this.btnsubmit.Name = "btnsubmit";
+            this.btnsubmit.Size = new System.Drawing.Size(249, 50);
+            this.btnsubmit.TabIndex = 5;
+            this.btnsubmit.Text = "Submit Appointment";
+            this.btnsubmit.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(13, 93);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(121, 18);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Select Services:";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(140, 93);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(83, 22);
+            this.checkBox1.TabIndex = 6;
+            this.checkBox1.Text = "pabunot";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.Location = new System.Drawing.Point(229, 93);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(66, 22);
+            this.checkBox2.TabIndex = 7;
+            this.checkBox2.Text = "pasta";
+            this.checkBox2.UseVisualStyleBackColor = true;
+            // 
+            // checkBox3
+            // 
+            this.checkBox3.AutoSize = true;
+            this.checkBox3.Location = new System.Drawing.Point(140, 121);
+            this.checkBox3.Name = "checkBox3";
+            this.checkBox3.Size = new System.Drawing.Size(85, 22);
+            this.checkBox3.TabIndex = 8;
+            this.checkBox3.Text = "cleaning";
+            this.checkBox3.UseVisualStyleBackColor = true;
+            // 
+            // checkBox4
+            // 
+            this.checkBox4.AutoSize = true;
+            this.checkBox4.Location = new System.Drawing.Point(229, 121);
+            this.checkBox4.Name = "checkBox4";
+            this.checkBox4.Size = new System.Drawing.Size(70, 22);
+            this.checkBox4.TabIndex = 9;
+            this.checkBox4.Text = "others";
+            this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.SteelBlue;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(715, 394);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(249, 50);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "view my appointments";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.SteelBlue;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(970, 394);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(182, 50);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "logout";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // frmappointment
             // 
@@ -106,6 +216,9 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::dental_clinic_appointment.Properties.Resources.dental1;
             this.ClientSize = new System.Drawing.Size(1164, 467);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -130,5 +243,13 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btnsubmit;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }

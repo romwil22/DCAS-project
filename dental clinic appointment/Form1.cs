@@ -31,5 +31,12 @@ namespace dental_clinic_appointment
             Form2.Show();
 
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var form3 = new frmpatientregister();
+            form3.Show();
+            this.Hide();
+        }
     }
 }
