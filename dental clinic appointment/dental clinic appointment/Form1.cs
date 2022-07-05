@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace dental_clinic_appointment
 {
@@ -26,9 +27,10 @@ namespace dental_clinic_appointment
 
         private void button1_Click(object sender, EventArgs e)
         {
-           var Form2 = new frmappointment();
-            this.Hide();
-            Form2.Show();
+            //var Form2 = new frmappointment();
+            // this.Hide();
+            // Form2.Show();
+            usernameLogMonitor(txtusername.Text);
 
         }
 
@@ -37,6 +39,25 @@ namespace dental_clinic_appointment
             var form3 = new frmpatientregister();
             form3.Show();
             this.Hide();
+        }
+
+        private void usernameLogMonitor(String usernameLog)
+        {
+            String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
+            String query = "INSERT INTO login_table (username) VALUES('" + usernameLog + "')"; //sql statement
+
+            MySqlConnection conn = new MySqlConnection(connection); // connection to database
+            MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
+            MySqlDataReader dr; // data reader
+
+            conn.Open(); // open db
+
+            dr = cmd.ExecuteReader();
+
+            MessageBox.Show("username log record successfully.");
+
+            conn.Close(); // close db
+
         }
     }
 }

@@ -30,48 +30,58 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpatientregister));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtpassword2 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtpassword = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.btnLogin = new System.Windows.Forms.Button();
+            this.btnRegister = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.btnregister = new System.Windows.Forms.Button();
-            this.btnlogin = new System.Windows.Forms.Button();
+            this.passwordTxtBx = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.password2TxtBx = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.usernameTxtBx = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.contactNumberTxtBx = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.femaleRadio = new System.Windows.Forms.RadioButton();
+            this.maleRadio = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.firsnameTxtBx = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lastnameTxtBx = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.addressTxtBx = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ageTxtBx = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.btnlogin);
-            this.groupBox1.Controls.Add(this.btnregister);
+            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.btnLogin);
+            this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.checkBox1);
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.txtpassword);
+            this.groupBox1.Controls.Add(this.passwordTxtBx);
             this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.txtpassword2);
+            this.groupBox1.Controls.Add(this.password2TxtBx);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
+            this.groupBox1.Controls.Add(this.usernameTxtBx);
             this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.addressTxtBx);
+            this.groupBox1.Controls.Add(this.contactNumberTxtBx);
+            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.femaleRadio);
+            this.groupBox1.Controls.Add(this.maleRadio);
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.ageTxtBx);
+            this.groupBox1.Controls.Add(this.lastnameTxtBx);
+            this.groupBox1.Controls.Add(this.firsnameTxtBx);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 21);
             this.groupBox1.Name = "groupBox1";
@@ -81,155 +91,35 @@
             this.groupBox1.Text = "Registration";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // label2
+            // btnLogin
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Fullname:";
+            this.btnLogin.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnLogin.Location = new System.Drawing.Point(234, 324);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(111, 37);
+            this.btnLogin.TabIndex = 20;
+            this.btnLogin.Text = "login";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnlogin_Click);
             // 
-            // textBox1
+            // btnRegister
             // 
-            this.textBox1.Location = new System.Drawing.Point(119, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(239, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(64, 154);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "gender:";
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(119, 152);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(47, 17);
-            this.radioButton1.TabIndex = 5;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "male";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(172, 152);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(56, 17);
-            this.radioButton2.TabIndex = 6;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "female";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(234, 152);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(54, 17);
-            this.radioButton3.TabIndex = 7;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "others";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 216);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(84, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "contact number:";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(119, 216);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(239, 20);
-            this.textBox2.TabIndex = 9;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(55, 33);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(58, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Username:";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(119, 30);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(239, 20);
-            this.textBox3.TabIndex = 11;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(57, 59);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(56, 13);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Password:";
-            // 
-            // txtpassword2
-            // 
-            this.txtpassword2.Location = new System.Drawing.Point(119, 89);
-            this.txtpassword2.Name = "txtpassword2";
-            this.txtpassword2.Size = new System.Drawing.Size(239, 20);
-            this.txtpassword2.TabIndex = 13;
-            this.txtpassword2.UseSystemPasswordChar = true;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(19, 92);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Confirm Password:";
-            // 
-            // txtpassword
-            // 
-            this.txtpassword.Location = new System.Drawing.Point(119, 56);
-            this.txtpassword.Name = "txtpassword";
-            this.txtpassword.Size = new System.Drawing.Size(239, 20);
-            this.txtpassword.TabIndex = 15;
-            this.txtpassword.UseSystemPasswordChar = true;
-            this.txtpassword.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
-            this.txtpassword.MouseEnter += new System.EventHandler(this.textBox5_MouseEnter);
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(64, 183);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(40, 13);
-            this.label7.TabIndex = 16;
-            this.label7.Text = "Status:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.BackColor = System.Drawing.Color.Silver;
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "single",
-            "married",
-            "divorced",
-            "others"});
-            this.comboBox1.Location = new System.Drawing.Point(119, 183);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(239, 21);
-            this.comboBox1.TabIndex = 17;
+            this.btnRegister.BackColor = System.Drawing.Color.SteelBlue;
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegister.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRegister.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegister.Location = new System.Drawing.Point(351, 311);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Size = new System.Drawing.Size(140, 50);
+            this.btnRegister.TabIndex = 19;
+            this.btnRegister.Text = "Register";
+            this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // checkBox1
             // 
@@ -243,34 +133,187 @@
             this.checkBox1.Visible = false;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // btnregister
+            // passwordTxtBx
             // 
-            this.btnregister.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnregister.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnregister.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnregister.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnregister.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnregister.Location = new System.Drawing.Point(218, 261);
-            this.btnregister.Name = "btnregister";
-            this.btnregister.Size = new System.Drawing.Size(140, 50);
-            this.btnregister.TabIndex = 19;
-            this.btnregister.Text = "Register";
-            this.btnregister.UseVisualStyleBackColor = false;
+            this.passwordTxtBx.Location = new System.Drawing.Point(119, 56);
+            this.passwordTxtBx.Name = "passwordTxtBx";
+            this.passwordTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.passwordTxtBx.TabIndex = 15;
+            this.passwordTxtBx.UseSystemPasswordChar = true;
+            this.passwordTxtBx.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
+            this.passwordTxtBx.MouseEnter += new System.EventHandler(this.textBox5_MouseEnter);
             // 
-            // btnlogin
+            // label6
             // 
-            this.btnlogin.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnlogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnlogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnlogin.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnlogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnlogin.Location = new System.Drawing.Point(26, 274);
-            this.btnlogin.Name = "btnlogin";
-            this.btnlogin.Size = new System.Drawing.Size(111, 37);
-            this.btnlogin.TabIndex = 20;
-            this.btnlogin.Text = "login";
-            this.btnlogin.UseVisualStyleBackColor = false;
-            this.btnlogin.Click += new System.EventHandler(this.btnlogin_Click);
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(19, 92);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Confirm Password:";
+            // 
+            // password2TxtBx
+            // 
+            this.password2TxtBx.Location = new System.Drawing.Point(119, 89);
+            this.password2TxtBx.Name = "password2TxtBx";
+            this.password2TxtBx.Size = new System.Drawing.Size(239, 20);
+            this.password2TxtBx.TabIndex = 13;
+            this.password2TxtBx.UseSystemPasswordChar = true;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(57, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(56, 13);
+            this.label5.TabIndex = 12;
+            this.label5.Text = "Password:";
+            // 
+            // usernameTxtBx
+            // 
+            this.usernameTxtBx.Location = new System.Drawing.Point(119, 30);
+            this.usernameTxtBx.Name = "usernameTxtBx";
+            this.usernameTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.usernameTxtBx.TabIndex = 11;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(55, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(58, 13);
+            this.label4.TabIndex = 10;
+            this.label4.Text = "Username:";
+            // 
+            // contactNumberTxtBx
+            // 
+            this.contactNumberTxtBx.Location = new System.Drawing.Point(119, 216);
+            this.contactNumberTxtBx.Name = "contactNumberTxtBx";
+            this.contactNumberTxtBx.Size = new System.Drawing.Size(152, 20);
+            this.contactNumberTxtBx.TabIndex = 9;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(23, 216);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Contact Number:";
+            // 
+            // femaleRadio
+            // 
+            this.femaleRadio.AutoSize = true;
+            this.femaleRadio.Location = new System.Drawing.Point(159, 152);
+            this.femaleRadio.Name = "femaleRadio";
+            this.femaleRadio.Size = new System.Drawing.Size(59, 17);
+            this.femaleRadio.TabIndex = 6;
+            this.femaleRadio.TabStop = true;
+            this.femaleRadio.Text = "Female";
+            this.femaleRadio.UseVisualStyleBackColor = true;
+            // 
+            // maleRadio
+            // 
+            this.maleRadio.AutoSize = true;
+            this.maleRadio.Location = new System.Drawing.Point(105, 152);
+            this.maleRadio.Name = "maleRadio";
+            this.maleRadio.Size = new System.Drawing.Size(48, 17);
+            this.maleRadio.TabIndex = 5;
+            this.maleRadio.TabStop = true;
+            this.maleRadio.Text = "Male";
+            this.maleRadio.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(54, 154);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(45, 13);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Gender:";
+            // 
+            // firsnameTxtBx
+            // 
+            this.firsnameTxtBx.Location = new System.Drawing.Point(119, 119);
+            this.firsnameTxtBx.Name = "firsnameTxtBx";
+            this.firsnameTxtBx.Size = new System.Drawing.Size(84, 20);
+            this.firsnameTxtBx.TabIndex = 3;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Firstname:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(215, 122);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Lastname:";
+            // 
+            // lastnameTxtBx
+            // 
+            this.lastnameTxtBx.Location = new System.Drawing.Point(279, 119);
+            this.lastnameTxtBx.Name = "lastnameTxtBx";
+            this.lastnameTxtBx.Size = new System.Drawing.Size(84, 20);
+            this.lastnameTxtBx.TabIndex = 3;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(23, 244);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Address:";
+            // 
+            // addressTxtBx
+            // 
+            this.addressTxtBx.Location = new System.Drawing.Point(77, 244);
+            this.addressTxtBx.Name = "addressTxtBx";
+            this.addressTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.addressTxtBx.TabIndex = 9;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(55, 185);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(48, 13);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Birthday:";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
+            this.dateTimePicker1.Location = new System.Drawing.Point(103, 182);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(194, 20);
+            this.dateTimePicker1.TabIndex = 21;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(224, 155);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(29, 13);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Age:";
+            // 
+            // ageTxtBx
+            // 
+            this.ageTxtBx.Location = new System.Drawing.Point(253, 152);
+            this.ageTxtBx.Name = "ageTxtBx";
+            this.ageTxtBx.Size = new System.Drawing.Size(30, 20);
+            this.ageTxtBx.TabIndex = 3;
+            this.ageTxtBx.Text = "29";
+            this.ageTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // frmpatientregister
             // 
@@ -295,22 +338,27 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox firsnameTxtBx;
+        private System.Windows.Forms.TextBox contactNumberTxtBx;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox txtpassword;
+        private System.Windows.Forms.RadioButton femaleRadio;
+        private System.Windows.Forms.RadioButton maleRadio;
+        private System.Windows.Forms.TextBox passwordTxtBx;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtpassword2;
+        private System.Windows.Forms.TextBox password2TxtBx;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox usernameTxtBx;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Button btnlogin;
-        private System.Windows.Forms.Button btnregister;
+        private System.Windows.Forms.Button btnLogin;
+        private System.Windows.Forms.Button btnRegister;
+        private System.Windows.Forms.TextBox lastnameTxtBx;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox addressTxtBx;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox ageTxtBx;
+        private System.Windows.Forms.Label label10;
     }
 }

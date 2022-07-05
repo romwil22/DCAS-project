@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace dental_clinic_appointment
 {
@@ -36,13 +37,13 @@ namespace dental_clinic_appointment
         {
             if (checkBox1.Checked == true)
             {
-                txtpassword.UseSystemPasswordChar = false;
-                txtpassword2.UseSystemPasswordChar = false;
+                passwordTxtBx.UseSystemPasswordChar = false;
+                password2TxtBx.UseSystemPasswordChar = false;
             }
             else
             {
-                txtpassword.UseSystemPasswordChar = true;
-                txtpassword2.UseSystemPasswordChar = true;
+                passwordTxtBx.UseSystemPasswordChar = true;
+                password2TxtBx.UseSystemPasswordChar = true;
             }
         }
 
@@ -51,6 +52,11 @@ namespace dental_clinic_appointment
             var form1 = new frmLogin();
             form1.Show();
             this.Hide();
+        }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

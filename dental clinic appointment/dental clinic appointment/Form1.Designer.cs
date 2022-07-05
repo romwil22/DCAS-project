@@ -41,11 +41,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Adobe Caslon Pro", 65F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.label1.Location = new System.Drawing.Point(51, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(983, 148);
+            this.label1.Size = new System.Drawing.Size(1065, 98);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dental Clinic Appointment";
             // 
@@ -92,7 +92,7 @@
             this.linkLabel1.LinkColor = System.Drawing.Color.DarkSlateGray;
             this.linkLabel1.Location = new System.Drawing.Point(611, 246);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(132, 16);
+            this.linkLabel1.Size = new System.Drawing.Size(133, 16);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "don\'t have an account";
@@ -107,7 +107,7 @@
             this.linkLabel2.LinkColor = System.Drawing.Color.DarkSlateGray;
             this.linkLabel2.Location = new System.Drawing.Point(638, 264);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(105, 16);
+            this.linkLabel2.Size = new System.Drawing.Size(106, 16);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "forgot password?";
