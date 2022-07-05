@@ -1,0 +1,48 @@
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe.config
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.pdb
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.SuggestedBindingRedirects.cache
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmLogin.resources
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.Properties.Resources.resources
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.GenerateResource.cache
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.exe
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.pdb
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmappointment.resources
+C:\Users\User\source\repos\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmpatientregister.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe.config
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.pdb
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\Google.Protobuf.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Compression.LZ4.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Compression.LZ4.Streams.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Hash.xxHash.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\MySql.Data.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Buffers.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Memory.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\ZstdNet.dll
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\Google.Protobuf.pdb
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\Google.Protobuf.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Compression.LZ4.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Compression.LZ4.Streams.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\K4os.Hash.xxHash.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\MySql.Data.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Buffers.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Memory.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.AssemblyReference.cache
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmLogin.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmappointment.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmpatientregister.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.Properties.Resources.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.GenerateResource.cache
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.CoreCompileInputs.cache
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.CopyComplete
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.exe
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.pdb
