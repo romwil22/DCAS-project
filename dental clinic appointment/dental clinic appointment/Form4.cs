@@ -49,7 +49,6 @@ namespace dental_clinic_appointment
             doctorRegistration(queryValue);
         }
 
-        string roomAssign;
 
         private void roomCmbBx_SelectedIndexChanged(object sender, EventArgs e)
         {
