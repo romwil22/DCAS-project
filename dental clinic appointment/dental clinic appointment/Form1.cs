@@ -59,5 +59,12 @@ namespace dental_clinic_appointment
             conn.Close(); // close db
 
         }
+
+        private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            var form4 = new frmdoktorregister();
+                form4.Show();
+                this.Hide();
+        }
     }
 }

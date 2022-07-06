@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpatientregister));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -39,27 +40,29 @@
             this.label5 = new System.Windows.Forms.Label();
             this.usernameTxtBx = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.addressTxtBx = new System.Windows.Forms.TextBox();
             this.contactNumberTxtBx = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.femaleRadio = new System.Windows.Forms.RadioButton();
             this.maleRadio = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
-            this.firsnameTxtBx = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.lastnameTxtBx = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.addressTxtBx = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
             this.ageTxtBx = new System.Windows.Forms.TextBox();
+            this.lastnameTxtBx = new System.Windows.Forms.TextBox();
+            this.firsnameTxtBx = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.dateTimePicker1);
+            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.birthdayPicker);
             this.groupBox1.Controls.Add(this.btnLogin);
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.checkBox1);
@@ -79,6 +82,7 @@
             this.groupBox1.Controls.Add(this.ageTxtBx);
             this.groupBox1.Controls.Add(this.lastnameTxtBx);
             this.groupBox1.Controls.Add(this.firsnameTxtBx);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.label8);
@@ -90,6 +94,14 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+            // 
+            // birthdayPicker
+            // 
+            this.birthdayPicker.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
+            this.birthdayPicker.Location = new System.Drawing.Point(103, 182);
+            this.birthdayPicker.Name = "birthdayPicker";
+            this.birthdayPicker.Size = new System.Drawing.Size(194, 20);
+            this.birthdayPicker.TabIndex = 21;
             // 
             // btnLogin
             // 
@@ -185,12 +197,28 @@
             this.label4.TabIndex = 10;
             this.label4.Text = "Username:";
             // 
+            // addressTxtBx
+            // 
+            this.addressTxtBx.Location = new System.Drawing.Point(77, 244);
+            this.addressTxtBx.Name = "addressTxtBx";
+            this.addressTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.addressTxtBx.TabIndex = 9;
+            // 
             // contactNumberTxtBx
             // 
             this.contactNumberTxtBx.Location = new System.Drawing.Point(119, 216);
             this.contactNumberTxtBx.Name = "contactNumberTxtBx";
             this.contactNumberTxtBx.Size = new System.Drawing.Size(152, 20);
             this.contactNumberTxtBx.TabIndex = 9;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(23, 244);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(48, 13);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Address:";
             // 
             // label3
             // 
@@ -211,6 +239,7 @@
             this.femaleRadio.TabStop = true;
             this.femaleRadio.Text = "Female";
             this.femaleRadio.UseVisualStyleBackColor = true;
+            this.femaleRadio.CheckedChanged += new System.EventHandler(this.femaleRadio_CheckedChanged);
             // 
             // maleRadio
             // 
@@ -222,6 +251,7 @@
             this.maleRadio.TabStop = true;
             this.maleRadio.Text = "Male";
             this.maleRadio.UseVisualStyleBackColor = true;
+            this.maleRadio.CheckedChanged += new System.EventHandler(this.maleRadio_CheckedChanged);
             // 
             // label1
             // 
@@ -232,30 +262,14 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "Gender:";
             // 
-            // firsnameTxtBx
+            // ageTxtBx
             // 
-            this.firsnameTxtBx.Location = new System.Drawing.Point(119, 119);
-            this.firsnameTxtBx.Name = "firsnameTxtBx";
-            this.firsnameTxtBx.Size = new System.Drawing.Size(84, 20);
-            this.firsnameTxtBx.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 122);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Firstname:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(215, 122);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(56, 13);
-            this.label8.TabIndex = 2;
-            this.label8.Text = "Lastname:";
+            this.ageTxtBx.Location = new System.Drawing.Point(253, 152);
+            this.ageTxtBx.Name = "ageTxtBx";
+            this.ageTxtBx.Size = new System.Drawing.Size(30, 20);
+            this.ageTxtBx.TabIndex = 3;
+            this.ageTxtBx.Text = "29";
+            this.ageTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // lastnameTxtBx
             // 
@@ -264,21 +278,12 @@
             this.lastnameTxtBx.Size = new System.Drawing.Size(84, 20);
             this.lastnameTxtBx.TabIndex = 3;
             // 
-            // label9
+            // firsnameTxtBx
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 244);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(48, 13);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Address:";
-            // 
-            // addressTxtBx
-            // 
-            this.addressTxtBx.Location = new System.Drawing.Point(77, 244);
-            this.addressTxtBx.Name = "addressTxtBx";
-            this.addressTxtBx.Size = new System.Drawing.Size(239, 20);
-            this.addressTxtBx.TabIndex = 9;
+            this.firsnameTxtBx.Location = new System.Drawing.Point(119, 119);
+            this.firsnameTxtBx.Name = "firsnameTxtBx";
+            this.firsnameTxtBx.Size = new System.Drawing.Size(84, 20);
+            this.firsnameTxtBx.TabIndex = 3;
             // 
             // label7
             // 
@@ -289,14 +294,6 @@
             this.label7.TabIndex = 2;
             this.label7.Text = "Birthday:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
-            this.dateTimePicker1.Location = new System.Drawing.Point(103, 182);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(194, 20);
-            this.dateTimePicker1.TabIndex = 21;
-            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -306,14 +303,43 @@
             this.label10.TabIndex = 2;
             this.label10.Text = "Age:";
             // 
-            // ageTxtBx
+            // label8
             // 
-            this.ageTxtBx.Location = new System.Drawing.Point(253, 152);
-            this.ageTxtBx.Name = "ageTxtBx";
-            this.ageTxtBx.Size = new System.Drawing.Size(30, 20);
-            this.ageTxtBx.TabIndex = 3;
-            this.ageTxtBx.Text = "29";
-            this.ageTxtBx.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(215, 122);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(56, 13);
+            this.label8.TabIndex = 2;
+            this.label8.Text = "Lastname:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(55, 122);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(55, 13);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Firstname:";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Rm 1",
+            "Rm 2"});
+            this.comboBox1.Location = new System.Drawing.Point(351, 182);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(348, 165);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Select Room:";
             // 
             // frmpatientregister
             // 
@@ -354,11 +380,13 @@
         private System.Windows.Forms.Button btnRegister;
         private System.Windows.Forms.TextBox lastnameTxtBx;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker birthdayPicker;
         private System.Windows.Forms.TextBox addressTxtBx;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox ageTxtBx;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label11;
     }
 }
