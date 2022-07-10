@@ -16,5 +16,7 @@ namespace dental_clinic_appointment
         {
             InitializeComponent();
         }
+
+        
     }
 }

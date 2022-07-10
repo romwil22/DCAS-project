@@ -47,6 +47,12 @@ namespace dental_clinic_appointment
         {
             String queryValue = "VALUES('" + usernameTxtBx.Text + "', '" + passwordTxtBx.Text + "', 1, '" + lastnameTxtBx.Text + "', '" + firsnameTxtBx.Text + "', '" + addressTxtBx.Text + "', '" + birthdayPicker.Value.Date.ToString() + "', '" + roomCmbBx.SelectedItem + "', '" + contactNumberTxtBx.Text + "', '" + gender + "')";
             doctorRegistration(queryValue);
+
+            var form4 = new frmdoktorregister();
+            form4.Close();
+
+            var form1 = new frmLogin();
+            form1.Show();
         }
 
 

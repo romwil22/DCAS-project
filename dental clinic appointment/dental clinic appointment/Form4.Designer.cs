@@ -30,6 +30,8 @@ namespace dental_clinic_appointment
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.roomCmbBx = new System.Windows.Forms.ComboBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -54,8 +56,6 @@ namespace dental_clinic_appointment
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.roomCmbBx = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -94,6 +94,27 @@ namespace dental_clinic_appointment
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration";
             // 
+            // roomCmbBx
+            // 
+            this.roomCmbBx.FormattingEnabled = true;
+            this.roomCmbBx.Items.AddRange(new object[] {
+            "Rm 1",
+            "Rm 2"});
+            this.roomCmbBx.Location = new System.Drawing.Point(332, 199);
+            this.roomCmbBx.Name = "roomCmbBx";
+            this.roomCmbBx.Size = new System.Drawing.Size(121, 21);
+            this.roomCmbBx.TabIndex = 24;
+            this.roomCmbBx.SelectedIndexChanged += new System.EventHandler(this.roomCmbBx_SelectedIndexChanged);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(329, 182);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 13);
+            this.label11.TabIndex = 23;
+            this.label11.Text = "Select Room:";
+            // 
             // birthdayPicker
             // 
             this.birthdayPicker.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
@@ -101,6 +122,7 @@ namespace dental_clinic_appointment
             this.birthdayPicker.Name = "birthdayPicker";
             this.birthdayPicker.Size = new System.Drawing.Size(194, 20);
             this.birthdayPicker.TabIndex = 21;
+            this.birthdayPicker.Value = new System.DateTime(2022, 7, 7, 0, 0, 0, 0);
             // 
             // btnLogin
             // 
@@ -315,27 +337,6 @@ namespace dental_clinic_appointment
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Firstname:";
-            // 
-            // roomCmbBx
-            // 
-            this.roomCmbBx.FormattingEnabled = true;
-            this.roomCmbBx.Items.AddRange(new object[] {
-            "Rm 1",
-            "Rm 2"});
-            this.roomCmbBx.Location = new System.Drawing.Point(332, 199);
-            this.roomCmbBx.Name = "roomCmbBx";
-            this.roomCmbBx.Size = new System.Drawing.Size(121, 21);
-            this.roomCmbBx.TabIndex = 24;
-            this.roomCmbBx.SelectedIndexChanged += new System.EventHandler(this.roomCmbBx_SelectedIndexChanged);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(329, 182);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 13);
-            this.label11.TabIndex = 23;
-            this.label11.Text = "Select Room:";
             // 
             // frmdoktorregister
             // 

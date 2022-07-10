@@ -27,10 +27,10 @@ namespace dental_clinic_appointment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //var Form2 = new frmappointment();
-            // this.Hide();
-            // Form2.Show();
-            usernameLogMonitor(txtusername.Text);
+            var Form2 = new frmappointment();
+            this.Hide();
+            Form2.Show();
+            //usernameLogMonitor(txtusername.Text);
 
         }
 

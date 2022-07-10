@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmpatientregister));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.birthdayPicker = new System.Windows.Forms.DateTimePicker();
             this.btnLogin = new System.Windows.Forms.Button();
             this.btnRegister = new System.Windows.Forms.Button();
@@ -50,12 +51,11 @@
             this.ageTxtBx = new System.Windows.Forms.TextBox();
             this.lastnameTxtBx = new System.Windows.Forms.TextBox();
             this.firsnameTxtBx = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -95,6 +95,17 @@
             this.groupBox1.Text = "Registration";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Rm 1",
+            "Rm 2"});
+            this.comboBox1.Location = new System.Drawing.Point(351, 182);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.TabIndex = 22;
+            // 
             // birthdayPicker
             // 
             this.birthdayPicker.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
@@ -102,6 +113,7 @@
             this.birthdayPicker.Name = "birthdayPicker";
             this.birthdayPicker.Size = new System.Drawing.Size(194, 20);
             this.birthdayPicker.TabIndex = 21;
+            this.birthdayPicker.Value = new System.DateTime(2022, 7, 7, 0, 0, 0, 0);
             // 
             // btnLogin
             // 
@@ -285,6 +297,15 @@
             this.firsnameTxtBx.Size = new System.Drawing.Size(84, 20);
             this.firsnameTxtBx.TabIndex = 3;
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(348, 165);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 13);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "Select Room:";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -320,26 +341,6 @@
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Firstname:";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Rm 1",
-            "Rm 2"});
-            this.comboBox1.Location = new System.Drawing.Point(351, 182);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 22;
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(348, 165);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(71, 13);
-            this.label11.TabIndex = 2;
-            this.label11.Text = "Select Room:";
             // 
             // frmpatientregister
             // 
