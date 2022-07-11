@@ -30,9 +30,9 @@ namespace admin_dcas
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.adminTxBx = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.passwordTxBx = new System.Windows.Forms.TextBox();
             this.logButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -47,13 +47,13 @@ namespace admin_dcas
             this.label1.Text = "Admin:";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // textBox1
+            // adminTxBx
             // 
-            this.textBox1.Location = new System.Drawing.Point(319, 129);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(331, 45);
-            this.textBox1.TabIndex = 1;
+            this.adminTxBx.Location = new System.Drawing.Point(319, 129);
+            this.adminTxBx.Multiline = true;
+            this.adminTxBx.Name = "adminTxBx";
+            this.adminTxBx.Size = new System.Drawing.Size(331, 45);
+            this.adminTxBx.TabIndex = 1;
             // 
             // label2
             // 
@@ -65,13 +65,13 @@ namespace admin_dcas
             this.label2.TabIndex = 0;
             this.label2.Text = "Password:";
             // 
-            // textBox2
+            // passwordTxBx
             // 
-            this.textBox2.Location = new System.Drawing.Point(318, 185);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(331, 45);
-            this.textBox2.TabIndex = 1;
+            this.passwordTxBx.Location = new System.Drawing.Point(318, 185);
+            this.passwordTxBx.Multiline = true;
+            this.passwordTxBx.Name = "passwordTxBx";
+            this.passwordTxBx.Size = new System.Drawing.Size(331, 45);
+            this.passwordTxBx.TabIndex = 1;
             // 
             // logButton
             // 
@@ -84,6 +84,7 @@ namespace admin_dcas
             this.logButton.TabIndex = 2;
             this.logButton.Text = "Login";
             this.logButton.UseVisualStyleBackColor = false;
+            this.logButton.Click += new System.EventHandler(this.logButton_Click);
             // 
             // adminLog
             // 
@@ -91,8 +92,8 @@ namespace admin_dcas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1029, 391);
             this.Controls.Add(this.logButton);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.passwordTxBx);
+            this.Controls.Add(this.adminTxBx);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "adminLog";
@@ -105,9 +106,9 @@ namespace admin_dcas
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox adminTxBx;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox passwordTxBx;
         private System.Windows.Forms.Button logButton;
     }
 }

@@ -50,12 +50,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.ageTxtBx = new System.Windows.Forms.TextBox();
             this.lastnameTxtBx = new System.Windows.Forms.TextBox();
-            this.firsnameTxtBx = new System.Windows.Forms.TextBox();
+            this.firstnameTxtBx = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.emailTxtBx = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -67,6 +69,8 @@
             this.groupBox1.Controls.Add(this.btnRegister);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.passwordTxtBx);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.emailTxtBx);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.password2TxtBx);
             this.groupBox1.Controls.Add(this.label5);
@@ -81,7 +85,7 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.ageTxtBx);
             this.groupBox1.Controls.Add(this.lastnameTxtBx);
-            this.groupBox1.Controls.Add(this.firsnameTxtBx);
+            this.groupBox1.Controls.Add(this.firstnameTxtBx);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label10);
@@ -101,7 +105,7 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Rm 1",
             "Rm 2"});
-            this.comboBox1.Location = new System.Drawing.Point(351, 182);
+            this.comboBox1.Location = new System.Drawing.Point(351, 224);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 22;
@@ -109,7 +113,8 @@
             // birthdayPicker
             // 
             this.birthdayPicker.CalendarTitleForeColor = System.Drawing.SystemColors.Window;
-            this.birthdayPicker.Location = new System.Drawing.Point(103, 182);
+            this.birthdayPicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.birthdayPicker.Location = new System.Drawing.Point(103, 224);
             this.birthdayPicker.Name = "birthdayPicker";
             this.birthdayPicker.Size = new System.Drawing.Size(194, 20);
             this.birthdayPicker.TabIndex = 21;
@@ -211,14 +216,14 @@
             // 
             // addressTxtBx
             // 
-            this.addressTxtBx.Location = new System.Drawing.Point(77, 244);
+            this.addressTxtBx.Location = new System.Drawing.Point(77, 286);
             this.addressTxtBx.Name = "addressTxtBx";
             this.addressTxtBx.Size = new System.Drawing.Size(239, 20);
             this.addressTxtBx.TabIndex = 9;
             // 
             // contactNumberTxtBx
             // 
-            this.contactNumberTxtBx.Location = new System.Drawing.Point(119, 216);
+            this.contactNumberTxtBx.Location = new System.Drawing.Point(119, 258);
             this.contactNumberTxtBx.Name = "contactNumberTxtBx";
             this.contactNumberTxtBx.Size = new System.Drawing.Size(152, 20);
             this.contactNumberTxtBx.TabIndex = 9;
@@ -226,7 +231,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(23, 244);
+            this.label9.Location = new System.Drawing.Point(23, 286);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(48, 13);
             this.label9.TabIndex = 8;
@@ -235,7 +240,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 216);
+            this.label3.Location = new System.Drawing.Point(23, 258);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(87, 13);
             this.label3.TabIndex = 8;
@@ -244,7 +249,7 @@
             // femaleRadio
             // 
             this.femaleRadio.AutoSize = true;
-            this.femaleRadio.Location = new System.Drawing.Point(159, 152);
+            this.femaleRadio.Location = new System.Drawing.Point(159, 194);
             this.femaleRadio.Name = "femaleRadio";
             this.femaleRadio.Size = new System.Drawing.Size(59, 17);
             this.femaleRadio.TabIndex = 6;
@@ -256,7 +261,7 @@
             // maleRadio
             // 
             this.maleRadio.AutoSize = true;
-            this.maleRadio.Location = new System.Drawing.Point(105, 152);
+            this.maleRadio.Location = new System.Drawing.Point(105, 194);
             this.maleRadio.Name = "maleRadio";
             this.maleRadio.Size = new System.Drawing.Size(48, 17);
             this.maleRadio.TabIndex = 5;
@@ -268,7 +273,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(54, 154);
+            this.label1.Location = new System.Drawing.Point(54, 196);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 13);
             this.label1.TabIndex = 4;
@@ -276,7 +281,7 @@
             // 
             // ageTxtBx
             // 
-            this.ageTxtBx.Location = new System.Drawing.Point(253, 152);
+            this.ageTxtBx.Location = new System.Drawing.Point(253, 194);
             this.ageTxtBx.Name = "ageTxtBx";
             this.ageTxtBx.Size = new System.Drawing.Size(30, 20);
             this.ageTxtBx.TabIndex = 3;
@@ -285,22 +290,22 @@
             // 
             // lastnameTxtBx
             // 
-            this.lastnameTxtBx.Location = new System.Drawing.Point(279, 119);
+            this.lastnameTxtBx.Location = new System.Drawing.Point(279, 161);
             this.lastnameTxtBx.Name = "lastnameTxtBx";
             this.lastnameTxtBx.Size = new System.Drawing.Size(84, 20);
             this.lastnameTxtBx.TabIndex = 3;
             // 
-            // firsnameTxtBx
+            // firstnameTxtBx
             // 
-            this.firsnameTxtBx.Location = new System.Drawing.Point(119, 119);
-            this.firsnameTxtBx.Name = "firsnameTxtBx";
-            this.firsnameTxtBx.Size = new System.Drawing.Size(84, 20);
-            this.firsnameTxtBx.TabIndex = 3;
+            this.firstnameTxtBx.Location = new System.Drawing.Point(119, 161);
+            this.firstnameTxtBx.Name = "firstnameTxtBx";
+            this.firstnameTxtBx.Size = new System.Drawing.Size(84, 20);
+            this.firstnameTxtBx.TabIndex = 3;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(348, 165);
+            this.label11.Location = new System.Drawing.Point(348, 207);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(71, 13);
             this.label11.TabIndex = 2;
@@ -309,7 +314,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(55, 185);
+            this.label7.Location = new System.Drawing.Point(55, 227);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 13);
             this.label7.TabIndex = 2;
@@ -318,7 +323,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(224, 155);
+            this.label10.Location = new System.Drawing.Point(224, 197);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(29, 13);
             this.label10.TabIndex = 2;
@@ -327,7 +332,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(215, 122);
+            this.label8.Location = new System.Drawing.Point(215, 164);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(56, 13);
             this.label8.TabIndex = 2;
@@ -336,11 +341,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(55, 122);
+            this.label2.Location = new System.Drawing.Point(55, 164);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(55, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Firstname:";
+            // 
+            // emailTxtBx
+            // 
+            this.emailTxtBx.Location = new System.Drawing.Point(119, 119);
+            this.emailTxtBx.Name = "emailTxtBx";
+            this.emailTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.emailTxtBx.TabIndex = 13;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(76, 122);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "email:";
             // 
             // frmpatientregister
             // 
@@ -365,7 +386,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox firsnameTxtBx;
+        private System.Windows.Forms.TextBox firstnameTxtBx;
         private System.Windows.Forms.TextBox contactNumberTxtBx;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.RadioButton femaleRadio;
@@ -389,5 +410,7 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox emailTxtBx;
     }
 }

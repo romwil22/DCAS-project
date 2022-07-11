@@ -16,5 +16,20 @@ namespace admin_dcas
         {
             InitializeComponent();
         }
+
+        const String admin = "admin";
+        const String password = "1234";
+        private void logButton_Click(object sender, EventArgs e)
+        {
+            if (adminTxBx.Text == admin  && passwordTxBx.Text == password)
+            {
+                var form2 = new adminProfile();
+                form2.Show();
+            }
+            else
+            {
+                MessageBox.Show("invalid username or password");
+            }
+        }
     }
 }

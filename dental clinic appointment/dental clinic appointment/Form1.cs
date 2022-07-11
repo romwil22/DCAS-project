@@ -27,10 +27,14 @@ namespace dental_clinic_appointment
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
             var Form2 = new frmappointment();
-            this.Hide();
+            
             Form2.Show();
-            //usernameLogMonitor(txtusername.Text);
+
+            // log datetime
+            String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
+            usernameLogMonitor(logDateTime);
 
         }
 
@@ -38,13 +42,13 @@ namespace dental_clinic_appointment
         {
             var form3 = new frmpatientregister();
             form3.Show();
-            this.Hide();
+            
         }
 
         private void usernameLogMonitor(String usernameLog)
         {
             String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
-            String query = "INSERT INTO login_table (username) VALUES('" + usernameLog + "')"; //sql statement
+            String query = "INSERT INTO login_table (username,log_datetime) " + usernameLog; //sql statement
 
             MySqlConnection conn = new MySqlConnection(connection); // connection to database
             MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
@@ -64,7 +68,7 @@ namespace dental_clinic_appointment
         {
             var form4 = new frmdoktorregister();
                 form4.Show();
-                this.Hide();
+                
         }
     }
 }

@@ -56,11 +56,15 @@ namespace dental_clinic_appointment
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            String queryValue;
-            queryValue = "VALUES('" + usernameTxtBx.Text + "', '" + passwordTxtBx.Text + "', 2, '"+ firsnameTxtBx.Text +"', '"+ lastnameTxtBx.Text +"', '"+ addressTxtBx.Text +"', '"+ birthdayPicker.Value.Date.ToString() +"', '"+ gender + "', "+ ageTxtBx.Text +")";
-            patientRegistration(queryValue);
+            // patient registration
+            String querypatientInfo;
+            querypatientInfo = "VALUES('" + usernameTxtBx.Text + "', '" + passwordTxtBx.Text + "', '"+firstnameTxtBx.Text +"', '"+ lastnameTxtBx.Text +"', '"+ emailTxtBx.Text +"', '"+ contactNumberTxtBx.Text +"', '"+ addressTxtBx.Text +"', '"+ birthdayPicker.Text +"', '"+ gender +"', '"+ ageTxtBx.Text +"')";
+            patientRegistration(querypatientInfo);
 
-            
+            // patient account registration
+            String queryPatientAccount = "VALUES ('" + usernameTxtBx.Text + "', '" + firstnameTxtBx.Text + "', '" + lastnameTxtBx.Text + "', '" + emailTxtBx.Text + "', '" + contactNumberTxtBx.Text + "', 'doctor')";
+            patientAccount(queryPatientAccount);
+
         }
 
         //DCAS function
@@ -68,7 +72,25 @@ namespace dental_clinic_appointment
         private void patientRegistration(String patientData)
         {
             String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
-            String query = "INSERT INTO patient_registration_table (username,password,user_id,first_name,last_name,address,birthdate,gender,age) " + patientData; //sql statement
+            String query = "INSERT INTO patient_registration_table (username,password,firstname,lastname,email,contact_number,address,birthdate,gender,age) " + patientData; //sql statement
+
+            MySqlConnection conn = new MySqlConnection(connection); // connection to database
+            MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
+            MySqlDataReader dr; // data reader
+
+            conn.Open(); // open db
+
+            dr = cmd.ExecuteReader();
+
+            MessageBox.Show("account register");
+
+            conn.Close(); // close db
+        }
+
+        private void patientAccount(String accountInfo)
+        {
+            String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
+            String query = "INSERT INTO account_table (username,firstname,lastname,email,contact_number,user_type) " + accountInfo; //sql statement
 
             MySqlConnection conn = new MySqlConnection(connection); // connection to database
             MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
