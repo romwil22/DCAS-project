@@ -32,6 +32,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.checkBox5 = new System.Windows.Forms.CheckBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
@@ -50,16 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.lastname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.firstname = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.room_assign = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.time = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.approve = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,6 +94,16 @@
             this.checkBox4.TabIndex = 9;
             this.checkBox4.Text = "others";
             this.checkBox4.UseVisualStyleBackColor = true;
+            // 
+            // checkBox5
+            // 
+            this.checkBox5.AutoSize = true;
+            this.checkBox5.Location = new System.Drawing.Point(229, 121);
+            this.checkBox5.Name = "checkBox5";
+            this.checkBox5.Size = new System.Drawing.Size(90, 22);
+            this.checkBox5.TabIndex = 8;
+            this.checkBox5.Text = "check-up";
+            this.checkBox5.UseVisualStyleBackColor = true;
             // 
             // checkBox3
             // 
@@ -296,61 +298,6 @@
             this.label10.TabIndex = 1;
             this.label10.Text = "contact number";
             // 
-            // checkBox5
-            // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(229, 121);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(90, 22);
-            this.checkBox5.TabIndex = 8;
-            this.checkBox5.Text = "check-up";
-            this.checkBox5.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.lastname,
-            this.firstname,
-            this.room_assign,
-            this.date,
-            this.time,
-            this.approve});
-            this.dataGridView1.Location = new System.Drawing.Point(528, 110);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(542, 273);
-            this.dataGridView1.TabIndex = 8;
-            // 
-            // lastname
-            // 
-            this.lastname.HeaderText = "lastname";
-            this.lastname.Name = "lastname";
-            // 
-            // firstname
-            // 
-            this.firstname.HeaderText = "firstname";
-            this.firstname.Name = "firstname";
-            // 
-            // room_assign
-            // 
-            this.room_assign.HeaderText = "room_assign";
-            this.room_assign.Name = "room_assign";
-            // 
-            // date
-            // 
-            this.date.HeaderText = "date";
-            this.date.Name = "date";
-            // 
-            // time
-            // 
-            this.time.HeaderText = "time";
-            this.time.Name = "time";
-            // 
-            // approve
-            // 
-            this.approve.HeaderText = "approve";
-            this.approve.Name = "approve";
-            // 
             // frmappointment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -358,7 +305,6 @@
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::dental_clinic_appointment.Properties.Resources.dental1;
             this.ClientSize = new System.Drawing.Size(1164, 467);
-            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsubmit);
@@ -378,7 +324,6 @@
             this.Text = "Appointment Schedule";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -408,12 +353,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn lastname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn firstname;
-        private System.Windows.Forms.DataGridViewTextBoxColumn room_assign;
-        private System.Windows.Forms.DataGridViewTextBoxColumn date;
-        private System.Windows.Forms.DataGridViewTextBoxColumn time;
-        private System.Windows.Forms.DataGridViewTextBoxColumn approve;
     }
 }

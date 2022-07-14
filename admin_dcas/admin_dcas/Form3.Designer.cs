@@ -30,16 +30,21 @@ namespace admin_dcas
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.registerBtn = new System.Windows.Forms.Button();
+            this.birthdatePicker = new System.Windows.Forms.DateTimePicker();
             this.maleRadBtn = new System.Windows.Forms.RadioButton();
             this.femaleRadBtn = new System.Windows.Forms.RadioButton();
             this.roomCmbBx = new System.Windows.Forms.ComboBox();
             this.lastnameTxBx = new System.Windows.Forms.TextBox();
+            this.addressTxBx = new System.Windows.Forms.TextBox();
             this.firstnameTxBx = new System.Windows.Forms.TextBox();
             this.contactNumberTxBx = new System.Windows.Forms.TextBox();
             this.emailTxBx = new System.Windows.Forms.TextBox();
             this.password2TxBx = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.passwordTxBx = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -49,11 +54,6 @@ namespace admin_dcas
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.birthdatePicker = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
-            this.registerBtn = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
-            this.addressTxBx = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -90,6 +90,25 @@ namespace admin_dcas
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Registration";
             // 
+            // registerBtn
+            // 
+            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerBtn.Location = new System.Drawing.Point(351, 302);
+            this.registerBtn.Name = "registerBtn";
+            this.registerBtn.Size = new System.Drawing.Size(140, 50);
+            this.registerBtn.TabIndex = 5;
+            this.registerBtn.Text = "register";
+            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
+            // 
+            // birthdatePicker
+            // 
+            this.birthdatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.birthdatePicker.Location = new System.Drawing.Point(110, 203);
+            this.birthdatePicker.Name = "birthdatePicker";
+            this.birthdatePicker.Size = new System.Drawing.Size(97, 20);
+            this.birthdatePicker.TabIndex = 4;
+            // 
             // maleRadBtn
             // 
             this.maleRadBtn.AutoSize = true;
@@ -124,6 +143,7 @@ namespace admin_dcas
             this.roomCmbBx.Name = "roomCmbBx";
             this.roomCmbBx.Size = new System.Drawing.Size(121, 21);
             this.roomCmbBx.TabIndex = 2;
+            
             // 
             // lastnameTxBx
             // 
@@ -132,6 +152,14 @@ namespace admin_dcas
             this.lastnameTxBx.Name = "lastnameTxBx";
             this.lastnameTxBx.Size = new System.Drawing.Size(112, 20);
             this.lastnameTxBx.TabIndex = 0;
+            // 
+            // addressTxBx
+            // 
+            this.addressTxBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.addressTxBx.Location = new System.Drawing.Point(110, 238);
+            this.addressTxBx.Name = "addressTxBx";
+            this.addressTxBx.Size = new System.Drawing.Size(323, 20);
+            this.addressTxBx.TabIndex = 0;
             // 
             // firstnameTxBx
             // 
@@ -182,6 +210,26 @@ namespace admin_dcas
             this.passwordTxBx.Name = "passwordTxBx";
             this.passwordTxBx.Size = new System.Drawing.Size(112, 20);
             this.passwordTxBx.TabIndex = 0;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(52, 206);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(51, 13);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "birthdate:";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(54, 241);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(47, 13);
+            this.label11.TabIndex = 1;
+            this.label11.Text = "address:";
             // 
             // label9
             // 
@@ -270,53 +318,6 @@ namespace admin_dcas
             this.label1.Size = new System.Drawing.Size(56, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "username:";
-            // 
-            // birthdatePicker
-            // 
-            this.birthdatePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthdatePicker.Location = new System.Drawing.Point(110, 203);
-            this.birthdatePicker.Name = "birthdatePicker";
-            this.birthdatePicker.Size = new System.Drawing.Size(97, 20);
-            this.birthdatePicker.TabIndex = 4;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(52, 206);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(51, 13);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "birthdate:";
-            // 
-            // registerBtn
-            // 
-            this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registerBtn.Location = new System.Drawing.Point(351, 302);
-            this.registerBtn.Name = "registerBtn";
-            this.registerBtn.Size = new System.Drawing.Size(140, 50);
-            this.registerBtn.TabIndex = 5;
-            this.registerBtn.Text = "register";
-            this.registerBtn.UseVisualStyleBackColor = true;
-            this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(54, 241);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(47, 13);
-            this.label11.TabIndex = 1;
-            this.label11.Text = "address:";
-            // 
-            // addressTxBx
-            // 
-            this.addressTxBx.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.addressTxBx.Location = new System.Drawing.Point(110, 238);
-            this.addressTxBx.Name = "addressTxBx";
-            this.addressTxBx.Size = new System.Drawing.Size(323, 20);
-            this.addressTxBx.TabIndex = 0;
             // 
             // doctorRegistration
             // 

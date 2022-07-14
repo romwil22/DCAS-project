@@ -27,10 +27,12 @@ namespace dental_clinic_appointment
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+
             var Form2 = new frmappointment();
-            
             Form2.Show();
+
+            var form5 = new doctorProfile();
+            form5.Show();
 
             // log datetime
             String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
@@ -57,8 +59,6 @@ namespace dental_clinic_appointment
             conn.Open(); // open db
 
             dr = cmd.ExecuteReader();
-
-            MessageBox.Show("username log record successfully.");
 
             conn.Close(); // close db
 
