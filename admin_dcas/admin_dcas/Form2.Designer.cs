@@ -29,51 +29,58 @@ namespace admin_dcas
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.logBtn = new System.Windows.Forms.Button();
+            this.doctorBtn = new System.Windows.Forms.Button();
+            this.patientBtn = new System.Windows.Forms.Button();
+            this.appointmentBtn = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.recordLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.recordGridView = new System.Windows.Forms.DataGridView();
+            this.accountBtn = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.recordGridView)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // logBtn
             // 
-            this.button1.Location = new System.Drawing.Point(16, 67);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "logs";
-            this.button1.UseVisualStyleBackColor = true;
+            this.logBtn.Location = new System.Drawing.Point(16, 94);
+            this.logBtn.Name = "logBtn";
+            this.logBtn.Size = new System.Drawing.Size(75, 23);
+            this.logBtn.TabIndex = 0;
+            this.logBtn.Text = "logs";
+            this.logBtn.UseVisualStyleBackColor = true;
+            this.logBtn.Click += new System.EventHandler(this.logBtn_Click);
             // 
-            // button2
+            // doctorBtn
             // 
-            this.button2.Location = new System.Drawing.Point(16, 96);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 0;
-            this.button2.Text = "doctor";
-            this.button2.UseVisualStyleBackColor = true;
+            this.doctorBtn.Location = new System.Drawing.Point(16, 123);
+            this.doctorBtn.Name = "doctorBtn";
+            this.doctorBtn.Size = new System.Drawing.Size(75, 23);
+            this.doctorBtn.TabIndex = 0;
+            this.doctorBtn.Text = "doctor";
+            this.doctorBtn.UseVisualStyleBackColor = true;
+            this.doctorBtn.Click += new System.EventHandler(this.doctorBtn_Click);
             // 
-            // button3
+            // patientBtn
             // 
-            this.button3.Location = new System.Drawing.Point(16, 125);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 0;
-            this.button3.Text = "patient";
-            this.button3.UseVisualStyleBackColor = true;
+            this.patientBtn.Location = new System.Drawing.Point(16, 152);
+            this.patientBtn.Name = "patientBtn";
+            this.patientBtn.Size = new System.Drawing.Size(75, 23);
+            this.patientBtn.TabIndex = 0;
+            this.patientBtn.Text = "patient";
+            this.patientBtn.UseVisualStyleBackColor = true;
+            this.patientBtn.Click += new System.EventHandler(this.patientBtn_Click);
             // 
-            // button4
+            // appointmentBtn
             // 
-            this.button4.Location = new System.Drawing.Point(16, 154);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 0;
-            this.button4.Text = "appointment";
-            this.button4.UseVisualStyleBackColor = true;
+            this.appointmentBtn.Location = new System.Drawing.Point(16, 181);
+            this.appointmentBtn.Name = "appointmentBtn";
+            this.appointmentBtn.Size = new System.Drawing.Size(75, 23);
+            this.appointmentBtn.TabIndex = 0;
+            this.appointmentBtn.Text = "appointment";
+            this.appointmentBtn.UseVisualStyleBackColor = true;
+            this.appointmentBtn.Click += new System.EventHandler(this.appointmentBtn_Click);
             // 
             // button5
             // 
@@ -95,15 +102,15 @@ namespace admin_dcas
             this.label1.TabIndex = 1;
             this.label1.Text = "record";
             // 
-            // label2
+            // recordLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(127, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 24);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "accounts:";
+            this.recordLabel.AutoSize = true;
+            this.recordLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.recordLabel.Location = new System.Drawing.Point(127, 40);
+            this.recordLabel.Name = "recordLabel";
+            this.recordLabel.Size = new System.Drawing.Size(156, 24);
+            this.recordLabel.TabIndex = 1;
+            this.recordLabel.Text = "Accounts Record";
             // 
             // label3
             // 
@@ -115,21 +122,45 @@ namespace admin_dcas
             this.label3.TabIndex = 1;
             this.label3.Text = "doctor";
             // 
+            // recordGridView
+            // 
+            this.recordGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.recordGridView.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.recordGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.recordGridView.Location = new System.Drawing.Point(131, 67);
+            this.recordGridView.Name = "recordGridView";
+            this.recordGridView.Size = new System.Drawing.Size(790, 516);
+            this.recordGridView.TabIndex = 2;
+            // 
+            // accountBtn
+            // 
+            this.accountBtn.Location = new System.Drawing.Point(16, 67);
+            this.accountBtn.Name = "accountBtn";
+            this.accountBtn.Size = new System.Drawing.Size(75, 23);
+            this.accountBtn.TabIndex = 0;
+            this.accountBtn.Text = "account";
+            this.accountBtn.UseVisualStyleBackColor = true;
+            this.accountBtn.Click += new System.EventHandler(this.accountBtn_Click);
+            // 
             // adminProfile
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(933, 595);
+            this.Controls.Add(this.recordGridView);
+            this.Controls.Add(this.recordLabel);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.appointmentBtn);
+            this.Controls.Add(this.patientBtn);
+            this.Controls.Add(this.doctorBtn);
+            this.Controls.Add(this.accountBtn);
+            this.Controls.Add(this.logBtn);
             this.Name = "adminProfile";
             this.Text = "Admin";
+            this.Load += new System.EventHandler(this.adminProfile_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.recordGridView)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,13 +168,15 @@ namespace admin_dcas
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button logBtn;
+        private System.Windows.Forms.Button doctorBtn;
+        private System.Windows.Forms.Button patientBtn;
+        private System.Windows.Forms.Button appointmentBtn;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label recordLabel;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.DataGridView recordGridView;
+        private System.Windows.Forms.Button accountBtn;
     }
 }
