@@ -79,6 +79,9 @@ namespace admin_dcas
             gender = "Female";
         }
 
-        
+        private void doctorRegistration_Load(object sender, EventArgs e)
+        {
+            StartPosition = FormStartPosition.Manual;
+        }
     }
 }

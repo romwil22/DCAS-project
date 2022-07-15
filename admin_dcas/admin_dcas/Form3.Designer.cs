@@ -92,13 +92,17 @@ namespace admin_dcas
             // 
             // registerBtn
             // 
+            this.registerBtn.BackColor = System.Drawing.Color.SteelBlue;
+            this.registerBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.registerBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.registerBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.registerBtn.Location = new System.Drawing.Point(351, 302);
             this.registerBtn.Name = "registerBtn";
             this.registerBtn.Size = new System.Drawing.Size(140, 50);
             this.registerBtn.TabIndex = 5;
             this.registerBtn.Text = "register";
-            this.registerBtn.UseVisualStyleBackColor = true;
+            this.registerBtn.UseVisualStyleBackColor = false;
             this.registerBtn.Click += new System.EventHandler(this.registerBtn_Click);
             // 
             // birthdatePicker
@@ -143,7 +147,6 @@ namespace admin_dcas
             this.roomCmbBx.Name = "roomCmbBx";
             this.roomCmbBx.Size = new System.Drawing.Size(121, 21);
             this.roomCmbBx.TabIndex = 2;
-            
             // 
             // lastnameTxBx
             // 
@@ -323,10 +326,13 @@ namespace admin_dcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(537, 450);
             this.Controls.Add(this.groupBox1);
             this.Name = "doctorRegistration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Doctor Registration";
+            this.Load += new System.EventHandler(this.doctorRegistration_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

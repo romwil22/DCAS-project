@@ -29,7 +29,7 @@ namespace dental_clinic_appointment
             da.SelectCommand = cmd;
             DataTable dt = new DataTable();
             da.Fill(dt);
-            appointmentGridView.DataSource = dt;
+            appointGridView.DataSource = dt;
         }
     }
 }

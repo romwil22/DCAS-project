@@ -31,5 +31,44 @@ namespace admin_dcas
                 MessageBox.Show("invalid username or password");
             }
         }
+
+        private void adminLog_KeyPress(object sender, KeyPressEventArgs e)
+        {
+           
+        }
+
+        private void adminLog_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logButton.PerformClick();
+            }
+        }
+
+        private void adminLog_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void adminLog_Load(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void adminTxBx_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logButton.PerformClick();
+            }
+        }
+
+        private void passwordTxBx_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                logButton.PerformClick();
+            }
+        }
     }
 }
