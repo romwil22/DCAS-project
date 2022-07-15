@@ -85,10 +85,11 @@
             this.Controls.Add(this.appointGridView);
             this.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "myappointmentform";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "My Appointments";
+            this.Load += new System.EventHandler(this.myappointmentform_Load);
             ((System.ComponentModel.ISupportInitialize)(this.appointGridView)).EndInit();
             this.ResumeLayout(false);
 

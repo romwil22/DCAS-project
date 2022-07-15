@@ -118,7 +118,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.BackgroundImage = global::dental_clinic_appointment.Properties.Resources.dental1;
-            this.ClientSize = new System.Drawing.Size(1029, 391);
+            this.ClientSize = new System.Drawing.Size(1117, 391);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.button1);

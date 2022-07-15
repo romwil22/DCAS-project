@@ -16,7 +16,7 @@ namespace admin_dcas
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new adminProfile());
+            Application.Run(new adminLog());
         }
     }
 }

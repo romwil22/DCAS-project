@@ -16,5 +16,10 @@ namespace dental_clinic_appointment
         {
             InitializeComponent();
         }
+
+        private void myappointmentform_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
