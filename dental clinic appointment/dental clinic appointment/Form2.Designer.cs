@@ -149,8 +149,8 @@
             this.comboBox2.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
-            "Rm 1",
-            "Rm 2"});
+            "Room 1",
+            "Room 2"});
             this.comboBox2.Location = new System.Drawing.Point(73, 194);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(131, 26);

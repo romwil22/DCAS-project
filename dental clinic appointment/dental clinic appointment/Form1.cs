@@ -28,15 +28,49 @@ namespace dental_clinic_appointment
         private void button1_Click(object sender, EventArgs e)
         {
 
+            // patient user validation
+            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;pssword=;database=dcas_db");
+            MySqlDataAdapter daPatientUser;
+            DataTable patientUserTable = new DataTable();
+
+            daPatientUser = new MySqlDataAdapter("SELECT * FROM patient_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'", conn);
+            daPatientUser.Fill(patientUserTable);
+
+            // doctor user validation
+            MySqlDataAdapter daDoctorUser;
+            DataTable doctorUserTable = new DataTable();
+
+            daDoctorUser = new MySqlDataAdapter("SELECT * FROM doctor_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'", conn);
+            daDoctorUser.Fill(doctorUserTable);
+
             var Form2 = new frmappointment();
-            Form2.Show();
-
             var form5 = new doctorProfile();
-            form5.Show();
 
-            // log datetime
-            String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
-            usernameLogMonitor(logDateTime);
+            if (patientUserTable.Rows.Count > 0)
+            {
+                // log datetime
+                String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
+                usernameLogMonitor(logDateTime);
+                Form2.Show();
+            }
+            else if (doctorUserTable.Rows.Count > 0)
+            {
+                // log datetime
+                String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
+                usernameLogMonitor(logDateTime);
+                form5.Show();
+            }
+            else
+            {
+                MessageBox.Show("Inavalid username or password");
+            }
+
+
+
+            //var form5 = new doctorProfile();
+            //form5.Show();
+
+
 
         }
 
