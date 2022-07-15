@@ -16,7 +16,7 @@ namespace dental_clinic_appointment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new doctorProfile());
+            Application.Run(new frmLogin());
         }
     }
 }

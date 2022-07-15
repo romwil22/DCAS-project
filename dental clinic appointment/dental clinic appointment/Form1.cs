@@ -30,71 +30,78 @@ namespace dental_clinic_appointment
         private void button1_Click(object sender, EventArgs e)
         {
             var Form2 = new frmappointment();
+            var form5 = new doctorProfile();
 
-            // patient user validation
-            MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;pssword=;database=dcas_db");
-            MySqlDataAdapter daPatientUser;
-            DataTable patientUserTable = new DataTable();
-            MySqlDataReader dr;
-            MySqlCommand cmd = new MySqlCommand("SELECT * FROM patient_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'", conn);
-
-            conn.Open();
-
-            dr = cmd.ExecuteReader();
-            dr.Read();
-
-            if (dr.HasRows)
+            if (accountType == "doctor")
             {
-                // log datetime
-                String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
-                usernameLogMonitor(logDateTime);
-                Form2.patientID = dr["patient_id"].ToString();
-                Form2.Show();
+                // doctor user validation
+                String connection = "server=localhost;user id=root;pssword=;database=dcas_db";
+                MySqlConnection conn = new MySqlConnection(connection);
+                String doctorDB = "SELECT * FROM doctor_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'";
+                MySqlDataReader drDoctor;
+                MySqlCommand cmdDoctor = new MySqlCommand(doctorDB, conn);
+
+                conn.Open();
+
+                drDoctor = cmdDoctor.ExecuteReader();
+                drDoctor.Read();
+
+                if (drDoctor.HasRows)
+                {
+                    // log datetime
+                    String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
+                    usernameLogMonitor(logDateTime);
+                    form5.firstname = drDoctor["firstname"].ToString();
+                    form5.lastname = drDoctor["lastname"].ToString();
+                    form5.username = drDoctor["username"].ToString();
+                    form5.assignRoom = drDoctor["assign_room"].ToString();
+                    form5.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Inavalid username or password");
+                }
+
+                conn.Close();
+
             }
+            else if (accountType == "patient")
+            {
+                // patient user validation
+                String connection = "server=localhost;user id=root;pssword=;database=dcas_db";
+                MySqlConnection conn = new MySqlConnection(connection);
+                MySqlDataReader drPatient;
+                String patientDB = "SELECT * FROM patient_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'";
+                MySqlCommand cmdPatient = new MySqlCommand(patientDB, conn);
 
-            conn.Close();
+                conn.Open();
 
+                drPatient = cmdPatient.ExecuteReader();
+                drPatient.Read();
 
+                if (drPatient.HasRows)
+                {
+                    // log datetime
+                    String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
+                    usernameLogMonitor(logDateTime);
+                    Form2.patientID = drPatient["patient_id"].ToString();
+                    Form2.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Inavalid username or password");
+                }
+
+                conn.Close();
+
+            }
+            else
+            {
+                MessageBox.Show("Please select account type.");
+            }
             
 
-            //daPatientUser = new MySqlDataAdapter("SELECT * FROM patient_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'", conn);
-            //daPatientUser.Fill(patientUserTable);
-
-            // doctor user validation
-            MySqlDataAdapter daDoctorUser;
-            DataTable doctorUserTable = new DataTable();
-
-            daDoctorUser = new MySqlDataAdapter("SELECT * FROM doctor_registration_table WHERE username = '" + txtusername.Text + "' and password = '" + txtpassword.Text + "'", conn);
-            daDoctorUser.Fill(doctorUserTable);
-
-            //var Form2 = new frmappointment();
-            //var form5 = new doctorProfile();
-
-            //if (patientUserTable.Rows.Count > 0) // patient log
-            //{
-
-            //    // log datetime
-            //    String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
-            //    usernameLogMonitor(logDateTime);
-
-            //    Form2.Show();
-            //}
-            //else if (doctorUserTable.Rows.Count > 0)
-            //{
-            //    // log datetime
-            //    String logDateTime = "VALUES('" + txtusername.Text + "', '" + DateTime.Now.ToString() + "')";
-            //    usernameLogMonitor(logDateTime);
-            //    form5.Show();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Inavalid username or password");
-            //}
-
-
-
-            //var form5 = new doctorProfile();
-            //form5.Show();
+            
 
 
 
@@ -127,6 +134,22 @@ namespace dental_clinic_appointment
         private void linkLabel3_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        public string accountType;
+        private void doctorRadBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            accountType = "doctor";
+        }
+
+        private void patientRadBtn_CheckedChanged(object sender, EventArgs e)
+        {
+            accountType = "patient";
         }
     }
 }
