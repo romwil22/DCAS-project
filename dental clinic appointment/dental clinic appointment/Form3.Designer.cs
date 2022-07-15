@@ -36,6 +36,8 @@
             this.btnRegister = new System.Windows.Forms.Button();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.passwordTxtBx = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.emailTxtBx = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.password2TxtBx = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -56,8 +58,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.emailTxtBx = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -171,6 +171,22 @@
             this.passwordTxtBx.UseSystemPasswordChar = true;
             this.passwordTxtBx.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             this.passwordTxtBx.MouseEnter += new System.EventHandler(this.textBox5_MouseEnter);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(76, 122);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(34, 13);
+            this.label12.TabIndex = 14;
+            this.label12.Text = "email:";
+            // 
+            // emailTxtBx
+            // 
+            this.emailTxtBx.Location = new System.Drawing.Point(119, 119);
+            this.emailTxtBx.Name = "emailTxtBx";
+            this.emailTxtBx.Size = new System.Drawing.Size(239, 20);
+            this.emailTxtBx.TabIndex = 13;
             // 
             // label6
             // 
@@ -347,22 +363,6 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Firstname:";
             // 
-            // emailTxtBx
-            // 
-            this.emailTxtBx.Location = new System.Drawing.Point(119, 119);
-            this.emailTxtBx.Name = "emailTxtBx";
-            this.emailTxtBx.Size = new System.Drawing.Size(239, 20);
-            this.emailTxtBx.TabIndex = 13;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(76, 122);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(34, 13);
-            this.label12.TabIndex = 14;
-            this.label12.Text = "email:";
-            // 
             // frmpatientregister
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,6 +375,7 @@
             this.Name = "frmpatientregister";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Patient Registration";
+            this.Load += new System.EventHandler(this.frmpatientregister_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);

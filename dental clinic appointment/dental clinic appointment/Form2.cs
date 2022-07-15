@@ -7,16 +7,40 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace dental_clinic_appointment
 {
     public partial class frmappointment : Form
     {
+        public string patientID;
         public frmappointment()
         {
             InitializeComponent();
         }
 
-        
+        private void frmappointment_Load(object sender, EventArgs e)
+        {
+            String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
+            String query = "SELECT * FROM patient_registration_table WHERE patient_id = '" + patientID + "'";//sql statement
+
+            MySqlConnection conn = new MySqlConnection(connection); // connection to database
+            MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
+            MySqlDataReader dr; // data reader
+
+            conn.Open(); // open db
+
+            dr = cmd.ExecuteReader();
+            dr.Read();
+
+            if (dr.HasRows)
+            {
+                firstnameLabel.Text = dr["firstname"].ToString();
+                lastnameLabel.Text = dr["lastname"].ToString();
+                contactNumberLabel.Text = dr["contact_number"].ToString();
+            }
+
+            conn.Close(); // close db
+        }
     }
 }

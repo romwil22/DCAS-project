@@ -115,5 +115,10 @@ namespace dental_clinic_appointment
         {
             gender = "female";
         }
+
+        private void frmpatientregister_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

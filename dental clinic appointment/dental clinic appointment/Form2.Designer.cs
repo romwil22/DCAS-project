@@ -48,9 +48,9 @@
             this.button2 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.firstnameLabel = new System.Windows.Forms.Label();
+            this.lastnameLabel = new System.Windows.Forms.Label();
+            this.contactNumberLabel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,32 +271,32 @@
             this.label7.TabIndex = 1;
             this.label7.Text = "username:";
             // 
-            // label8
+            // firstnameLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(441, 195);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(72, 18);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "firstname";
+            this.firstnameLabel.AutoSize = true;
+            this.firstnameLabel.Location = new System.Drawing.Point(441, 195);
+            this.firstnameLabel.Name = "firstnameLabel";
+            this.firstnameLabel.Size = new System.Drawing.Size(72, 18);
+            this.firstnameLabel.TabIndex = 1;
+            this.firstnameLabel.Text = "firstname";
             // 
-            // label9
+            // lastnameLabel
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(441, 235);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 18);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "lastname";
+            this.lastnameLabel.AutoSize = true;
+            this.lastnameLabel.Location = new System.Drawing.Point(441, 235);
+            this.lastnameLabel.Name = "lastnameLabel";
+            this.lastnameLabel.Size = new System.Drawing.Size(71, 18);
+            this.lastnameLabel.TabIndex = 1;
+            this.lastnameLabel.Text = "lastname";
             // 
-            // label10
+            // contactNumberLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(441, 273);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(114, 18);
-            this.label10.TabIndex = 1;
-            this.label10.Text = "contact number";
+            this.contactNumberLabel.AutoSize = true;
+            this.contactNumberLabel.Location = new System.Drawing.Point(441, 273);
+            this.contactNumberLabel.Name = "contactNumberLabel";
+            this.contactNumberLabel.Size = new System.Drawing.Size(114, 18);
+            this.contactNumberLabel.TabIndex = 1;
+            this.contactNumberLabel.Text = "contact number";
             // 
             // frmappointment
             // 
@@ -310,9 +310,9 @@
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.contactNumberLabel);
+            this.Controls.Add(this.lastnameLabel);
+            this.Controls.Add(this.firstnameLabel);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -322,6 +322,7 @@
             this.Name = "frmappointment";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Appointment Schedule";
+            this.Load += new System.EventHandler(this.frmappointment_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -350,8 +351,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label firstnameLabel;
+        private System.Windows.Forms.Label lastnameLabel;
+        private System.Windows.Forms.Label contactNumberLabel;
     }
 }
