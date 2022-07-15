@@ -11,8 +11,10 @@ using MySql.Data.MySqlClient;
 
 namespace dental_clinic_appointment
 {
+    
     public partial class doctorProfile : Form
     {
+        public String firstname, lastname, username, assignRoom;
         public doctorProfile()
         {
             InitializeComponent();
@@ -21,7 +23,7 @@ namespace dental_clinic_appointment
         private void doctorProfile_Load(object sender, EventArgs e)
         {
             String connection = "server=localhost;user id=root;pssword=;database=dcas_db"; //connection
-            String query = "SELECT * FROM appointment_table"; //sql statement
+            String query = "SELECT * FROM appointment_table WHERE assign_room = '"+ assignRoom +"'"; //sql statement
 
             MySqlConnection conn = new MySqlConnection(connection); // connection to database
             MySqlCommand cmd = new MySqlCommand(query, conn); // qury command
@@ -30,6 +32,12 @@ namespace dental_clinic_appointment
             DataTable dt = new DataTable();
             da.Fill(dt);
             appointGridView.DataSource = dt;
+
+            fullnameLabel.Text = firstname + " " + lastname;
+            usernameLabel.Text = username;
+            roomLabel.Text = assignRoom;
         }
+
+        
     }
 }

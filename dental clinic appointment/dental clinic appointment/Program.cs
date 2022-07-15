@@ -16,7 +16,11 @@ namespace dental_clinic_appointment
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new myappointmentform());
+=======
+            Application.Run(new frmLogin());
+>>>>>>> 3a29c1d3557ec75c3f97733f78a8dd764a89f36b
         }
     }
 }

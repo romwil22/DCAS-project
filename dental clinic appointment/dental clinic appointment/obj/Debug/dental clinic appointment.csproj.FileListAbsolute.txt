@@ -48,7 +48,6 @@ C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment
 C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\bin\Debug\System.Numerics.Vectors.xml
 C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.csproj.CopyComplete
-C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.frmdoktorregister.resources
 C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.doctorProfile.resources
 C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe.config
 C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\dental clinic appointment\bin\Debug\dental clinic appointment.exe
@@ -90,3 +89,4 @@ C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\den
 C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.exe
 C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental clinic appointment.pdb
 C:\Users\User\Documents\dentealclinic\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.myappointmentform.resources
+C:\Users\Rom\Desktop\5TH-YR-2ND-SEM\elec4\DCAS-project\dental clinic appointment\dental clinic appointment\obj\Debug\dental_clinic_appointment.myappointmentform.resources
