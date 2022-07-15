@@ -46,11 +46,8 @@
             this.btnsubmit = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.firstnameLabel = new System.Windows.Forms.Label();
-            this.lastnameLabel = new System.Windows.Forms.Label();
-            this.contactNumberLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,13 +55,13 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 65F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 50.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.label1.Location = new System.Drawing.Point(289, 9);
+            this.label1.Location = new System.Drawing.Point(221, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(684, 98);
+            this.label1.Size = new System.Drawing.Size(693, 76);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Select Schedule";
+            this.label1.Text = "Select Your Schedule";
             // 
             // panel1
             // 
@@ -80,7 +77,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.dateTimePicker1);
-            this.panel1.Location = new System.Drawing.Point(21, 114);
+            this.panel1.Location = new System.Drawing.Point(121, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(404, 251);
             this.panel1.TabIndex = 2;
@@ -218,7 +215,7 @@
             this.btnsubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnsubmit.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnsubmit.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnsubmit.Location = new System.Drawing.Point(21, 394);
+            this.btnsubmit.Location = new System.Drawing.Point(576, 110);
             this.btnsubmit.Name = "btnsubmit";
             this.btnsubmit.Size = new System.Drawing.Size(249, 50);
             this.btnsubmit.TabIndex = 5;
@@ -232,7 +229,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(715, 394);
+            this.button1.Location = new System.Drawing.Point(576, 186);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(249, 50);
             this.button1.TabIndex = 6;
@@ -246,57 +243,37 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button2.Location = new System.Drawing.Point(970, 394);
+            this.button2.Location = new System.Drawing.Point(576, 259);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(182, 50);
+            this.button2.Size = new System.Drawing.Size(249, 50);
             this.button2.TabIndex = 7;
             this.button2.Text = "logout";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // label8
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(441, 125);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(55, 18);
-            this.label6.TabIndex = 1;
-            this.label6.Text = "profile:";
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 30F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label8.Location = new System.Drawing.Point(-5, 52);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(72, 46);
+            this.label8.TabIndex = 8;
+            this.label8.Text = "Hi,";
+            this.label8.Click += new System.EventHandler(this.label8_Click);
             // 
-            // label7
+            // label9
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(441, 160);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(81, 18);
-            this.label7.TabIndex = 1;
-            this.label7.Text = "username:";
-            // 
-            // firstnameLabel
-            // 
-            this.firstnameLabel.AutoSize = true;
-            this.firstnameLabel.Location = new System.Drawing.Point(441, 195);
-            this.firstnameLabel.Name = "firstnameLabel";
-            this.firstnameLabel.Size = new System.Drawing.Size(72, 18);
-            this.firstnameLabel.TabIndex = 1;
-            this.firstnameLabel.Text = "firstname";
-            // 
-            // lastnameLabel
-            // 
-            this.lastnameLabel.AutoSize = true;
-            this.lastnameLabel.Location = new System.Drawing.Point(441, 235);
-            this.lastnameLabel.Name = "lastnameLabel";
-            this.lastnameLabel.Size = new System.Drawing.Size(71, 18);
-            this.lastnameLabel.TabIndex = 1;
-            this.lastnameLabel.Text = "lastname";
-            // 
-            // contactNumberLabel
-            // 
-            this.contactNumberLabel.AutoSize = true;
-            this.contactNumberLabel.Location = new System.Drawing.Point(441, 273);
-            this.contactNumberLabel.Name = "contactNumberLabel";
-            this.contactNumberLabel.Size = new System.Drawing.Size(114, 18);
-            this.contactNumberLabel.TabIndex = 1;
-            this.contactNumberLabel.Text = "contact number";
+            this.label9.AutoSize = true;
+            this.label9.BackColor = System.Drawing.Color.Transparent;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.label9.Location = new System.Drawing.Point(52, 58);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(176, 39);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "username";
             // 
             // frmappointment
             // 
@@ -304,17 +281,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.BackgroundImage = global::dental_clinic_appointment.Properties.Resources.dental1;
-            this.ClientSize = new System.Drawing.Size(1164, 467);
+            this.ClientSize = new System.Drawing.Size(953, 467);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnsubmit);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.contactNumberLabel);
-            this.Controls.Add(this.lastnameLabel);
-            this.Controls.Add(this.firstnameLabel);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -348,11 +322,8 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.Label firstnameLabel;
-        private System.Windows.Forms.Label lastnameLabel;
-        private System.Windows.Forms.Label contactNumberLabel;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }

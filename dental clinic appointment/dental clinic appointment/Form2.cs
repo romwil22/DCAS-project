@@ -35,12 +35,15 @@ namespace dental_clinic_appointment
 
             if (dr.HasRows)
             {
-                firstnameLabel.Text = dr["firstname"].ToString();
-                lastnameLabel.Text = dr["lastname"].ToString();
-                contactNumberLabel.Text = dr["contact_number"].ToString();
+                //username
             }
 
             conn.Close(); // close db
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
